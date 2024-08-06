@@ -49,3 +49,7 @@ class Dealt_Cards(Standard_Deck):
         self.deck_position += 1
 
         return card
+
+    def reshuffle(self):
+        self.deck_position = 0
+        self.shuffle()
