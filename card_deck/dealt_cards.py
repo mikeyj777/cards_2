@@ -9,7 +9,7 @@ cards_per_hand = 2
 
 class Dealt_Cards(Standard_Deck):
 
-    def __init__(self, num_players = 0, include_dealer = False, cards_per_hand = 0, shuffle_it = True, cards_to_specify = [], specified_card_locations = []):
+    def __init__(self, num_players = 0, include_dealer = False, cards_per_hand = 0, cards_to_specify = [], specified_card_locations = []):
 
         self.num_players = num_players
         self.include_dealer = include_dealer
@@ -17,7 +17,7 @@ class Dealt_Cards(Standard_Deck):
         self.hands = []
         self.deck_position = 0
 
-        super().__init__(shuffle_it = shuffle_it, cards_to_specify = cards_to_specify, specified_card_locations = specified_card_locations)
+        super().__init__(cards_to_specify = cards_to_specify, specified_card_locations = specified_card_locations)
     
     def deal_hands(self, num_players = 0, cards_per_hand = 0, include_dealer = None):
 
