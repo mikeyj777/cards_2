@@ -5,7 +5,8 @@ class Standard_Deck:
     def __init__(self, shuffle_it = True, num_shuffles = 100, cards_to_specify = [], specified_card_locations = []) -> None:
         self.seed = np.random.randint(0, 1000000)
         # debug xxx apple
-        self.seed = 42
+        self.seed = 348559
+        print(f'\r\n\nthe seed is {self.seed}')
         np.random.seed(self.seed)
         self.deck = np.arange(52)
         self.num_shuffles = num_shuffles
